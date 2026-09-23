@@ -44,6 +44,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(\App\Filament\Pages\Auth\Login::class)
+            ->profile()
             ->brandLogo(fn () => view('filament.logo'))
             ->brandLogoHeight('2rem')
             ->favicon($favicon)
@@ -75,4 +76,7 @@ class AdminPanelProvider extends PanelProvider
             ]);
     }
 }
+
+
+
 
